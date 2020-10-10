@@ -1,0 +1,11 @@
+
+#calculator-screen {
+    display: grid;
+    grid-template-columns: 200px;
+}
+
+#calculator-buttons {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+}
+
