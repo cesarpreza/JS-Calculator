@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>JS-Calculator</title>
 </head>
 
 <body>
 <div id="calculator-container">   
     <div>
-         <input id='calculator-display' type="text"></input>
+         <input id='calculator-display' type="text" value='' disabled />
     </div>        
         <div id="calculator-buttons">
-            <button class="number" id='numberOne' value=1>1</button>
-            <button class="number" value="2">2</button>
-            <button class="number" value="3">3</button>
-            <button class="number" value="4">4</button>
-            <button class="number" value="5">5</button>
-            <button class="number" value="6">6</button>
-            <button class="number" value="7">7</button>
-            <button class="number" value="8">8</button>
-            <button class="number" value="9">9</button>
-            <button class="number" value="0">0</button>
-            <button class="number" value=".">.</button>
-            <button class="operator">+</button>
-            <button class="operator">-</button>
-            <button class="operator">&divide;</button>
-            <button class="operator">&times;</button>
-            <button class="operator">=</button>
-            <button class="operator">AC</button>
+            <input type="button" class='CalculatorButton' id='one' value='1' />
+            <input type="button" class='CalculatorButton' id='two' value='2' />
+            <input type="button" class='CalculatorButton' id='three' value='3' />
+            <input type="button" class='CalculatorButton'  id='four' value='4' />
+            <input type="button" class='CalculatorButton'  id='five' value='5' />
+            <input type="button" class='CalculatorButton'  id='six' value='6' />
+            <input type="button" class='CalculatorButton'  id='seven' value='7' />
+            <input type="button" class='CalculatorButton'  id='eight' value='8' />
+            <input type="button" class='CalculatorButton'  id='nine' value='9' />
+            <input type="button" class='CalculatorButton'  id='zero' value='0' />
+            <input type="button" class='CalculatorButton'  id='decimal' value='.' />
+            <input type="button" class='CalculatorButton'  id='times' value='&times' />
+            <input type="button" class='CalculatorButton'  id='divide' value='&divide' />
+            <input type="button" class='CalculatorButton'  id='add' value='+' />
+            <input type="button" class='CalculatorButton'  id='minus' value='-' />
+            <input type="button" class='CalculatorButton'  id='equal' value='=' />
+            <input type="button" class='CalculatorButton'  id='clear' value='AC' />
         </div>
 </div>
 

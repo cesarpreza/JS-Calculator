@@ -1,9 +1,8 @@
-const calculatorDisplay = document.getElementById('calculator-display').value = '0';
 
+const display = document.getElementById('calculator-display');
 
-function oneKeyValue() {
-    const oneKey = document.getElementById('numberOne').value;
-    oneKey.addEventListener('click', function() {
-        
-    });
+function numberOne(e) {
+    oneButton.document.getElementById('one');
+    const oneButton = e.target
+    console.log(oneButton.e.target);
 }
