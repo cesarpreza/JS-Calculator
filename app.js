@@ -28,9 +28,7 @@ function operatorClicked() {
             display.value = e.target.value;
         })
     })
-};
-
-
+}
 operatorClicked();
 allClear();
 numberButtonClicked();
