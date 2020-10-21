@@ -1,20 +1,38 @@
 
 const display = document.getElementById('calculator-display');
-let firstOperand = null;
-let secondOperand = null;
-let operator = null;
+let firstNumber = null;
+let secondNumber = null;
+let operand = null;
 
 function numberButtonClicked() {
     document.querySelectorAll('.number-button').forEach(item => {
         item.addEventListener('click', (e) => {
-            display.value = e.target.value;
+            display.value += e.target.value;
         })
     })
 };
 
+function allClear() {
+    document.getElementById('clear').addEventListener('click', function() {
+        if(!display.value == '') {
+            display.value = '';
+        }
+    });
+}
 
 
-getFirstOperand();
+function operatorClicked() {
+    const operator = document.querySelectorAll('.operator-button');
+    operator.forEach(item => {
+        item.addEventListener('click', (e) => {
+            display.value = e.target.value;
+        })
+    })
+}
+
+
+operatorClicked();
+allClear();
 numberButtonClicked();
 
 
@@ -93,32 +111,6 @@ numberButtonClicked();
 //         display.value = e.target.value;
 //     })
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
