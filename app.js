@@ -14,8 +14,8 @@ function numberButtonClicked() {
 
 function allClear() {
     document.getElementById('clear').addEventListener('click', function() {
-        if(!display.value == '') {
-            display.value = '';
+        if(!display.value == '0') {
+            display.value = '0';
         }
     });
 }
@@ -29,6 +29,8 @@ function operatorClicked() {
         })
     })
 }
+
+
 operatorClicked();
 allClear();
 numberButtonClicked();
