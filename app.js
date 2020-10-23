@@ -9,8 +9,12 @@ function numberButtonClicked() {
         item.addEventListener('click', (e) => {
             if(operand !== null) {
                 secondNumber = e.target.value;
-                display.value = '' + secondNumber;
-                console.log(secondNumber);
+                display.value = secondNumber;
+                console.log(secondNumber); //! remove before submit
+            } else {
+                firstNumber = e.target.value;
+                display.value = firstNumber;
+                console.log(firstNumber); //! remove before submit
             }
         })
     })
@@ -19,6 +23,8 @@ function numberButtonClicked() {
 function allClear() {
     document.getElementById('clear').addEventListener('click', function() {
         if(!display.value == '0') {
+            firstNumber = null;
+            secondNumber = null;
             operand = null;
             display.value = '0';
         }
@@ -31,7 +37,7 @@ function operatorClicked() {
     operator.forEach(item => {
         item.addEventListener('click', (e) => {
             operand = e.target.value;
-            console.log(operand);
+            console.log(operand); //! remove before submit
         })
     })
 }
