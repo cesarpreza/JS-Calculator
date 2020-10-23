@@ -7,7 +7,11 @@ let operand = null;
 function numberButtonClicked() {
     document.querySelectorAll('.number-button').forEach(item => {
         item.addEventListener('click', (e) => {
-            display.value += e.target.value;
+            if(operand !== null) {
+                secondNumber = e.target.value;
+                display.value = '' + secondNumber;
+                console.log(secondNumber);
+            }
         })
     })
 };
@@ -15,6 +19,7 @@ function numberButtonClicked() {
 function allClear() {
     document.getElementById('clear').addEventListener('click', function() {
         if(!display.value == '0') {
+            operand = null;
             display.value = '0';
         }
     });
@@ -25,7 +30,8 @@ function operatorClicked() {
     const operator = document.querySelectorAll('.operator-button');
     operator.forEach(item => {
         item.addEventListener('click', (e) => {
-            display.value = e.target.value;
+            operand = e.target.value;
+            console.log(operand);
         })
     })
 }

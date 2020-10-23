@@ -1,5 +1,5 @@
 body {
-    background-color: #1e5f74;
+    background-color: #0f4d61;
 }
 
 #calculator-buttons {
@@ -9,7 +9,7 @@ body {
 }
 
 #calculator-container {
-    background-color: #1f4068;
+    background-color: #031d3d;
     border-radius: 1rem;
     padding-bottom: 15px;
     position: fixed;
@@ -42,6 +42,7 @@ body {
     border-radius: 5rem;
     height: 50px;
     margin: 2px;
+    outline: none;
 }
 
 .operator-button {
@@ -51,4 +52,5 @@ body {
     color: white;
     height: 50px;
     margin: 2px;
+    outline: none;
 }
