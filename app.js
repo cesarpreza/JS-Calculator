@@ -2,12 +2,13 @@
 const display = document.getElementById('calculator-display');
 let firstNumber = null;
 let secondNumber = null;
-let operand = null;
+let operand1 = null;
+let calcResult = document.getElementById('equal');
 
 function numberButtonClicked() {
     document.querySelectorAll('.number-button').forEach(item => {
         item.addEventListener('click', (e) => {
-            if(operand !== null) {
+            if(operand1 !== null) {
                 secondNumber = e.target.value;
                 display.value = secondNumber;
                 console.log(secondNumber); //! remove before submit
@@ -20,12 +21,21 @@ function numberButtonClicked() {
     })
 };
 
+function result() {
+    calcResult.addEventListener('click', (e) => {
+        if(numberButtonClicked) {
+            calcResult = e.target.value;
+            //! display.value should show number + number in display. 
+        }
+    })
+}
+
 function allClear() {
     document.getElementById('clear').addEventListener('click', function() {
         if(!display.value == '0') {
             firstNumber = null;
             secondNumber = null;
-            operand = null;
+            operand1 = null;
             display.value = '0';
         }
     });
@@ -36,13 +46,13 @@ function operatorClicked() {
     const operator = document.querySelectorAll('.operator-button');
     operator.forEach(item => {
         item.addEventListener('click', (e) => {
-            operand = e.target.value;
-            console.log(operand); //! remove before submit
+            operand1 = e.target.value;
+            console.log(operand1); //! remove before submit
         })
     })
 }
 
-
+result()
 operatorClicked();
 allClear();
 numberButtonClicked();
