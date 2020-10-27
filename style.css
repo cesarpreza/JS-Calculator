@@ -36,6 +36,11 @@ body {
     justify-content: center;
 }
 
+#equal {
+    background-color: orange;
+    
+}
+
 .number-button {
     background-color: #dddddd;
     border: none;
@@ -43,6 +48,14 @@ body {
     height: 50px;
     margin: 2px;
     outline: none;
+}
+
+.number-button:hover {
+    background-color: white;
+}
+
+.number-button:active {
+    transform: translateY(2px);
 }
 
 .operator-button {
@@ -53,4 +66,12 @@ body {
     height: 50px;
     margin: 2px;
     outline: none;
+}
+
+.operator-button:hover {
+    background-color: #af2d2d;
+}
+
+.operator-button:active {
+    transform: translateY(2px);
 }
