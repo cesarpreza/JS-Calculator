@@ -17,7 +17,7 @@ You can try the calculator [here](https://cesarpreza.github.io/JS-Calculator/)
 
 - Click the '=' button to get your calculation  
 
-# Refference Image 
+# Reference Image 
 
 ![](images/screenshot.png)
 
