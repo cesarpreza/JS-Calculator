@@ -5,7 +5,7 @@ You can try the calculator [here](https://cesarpreza.github.io/JS-Calculator/)
 
 # Functionality 
 
-- Inout the first number user wants to calculate
+- Input the first number user wants to calculate
 
 - click an operator:  
   - Add
@@ -30,4 +30,4 @@ and I look forward to the projects I have yet to make and the challenges I have 
 
 # Author 
 
-Cesar Preza - Software Developer [linkdin](https://www.linkedin.com/in/cesar-preza-72675278/)
+Cesar Preza - Software Developer [linkedin](https://www.linkedin.com/in/cesar-preza-72675278/)
